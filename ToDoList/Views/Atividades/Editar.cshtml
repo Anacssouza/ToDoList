@@ -1,0 +1,37 @@
+﻿@model AtividadesModel
+@{
+    ViewData["Title"] = "Editar Atividade";
+}
+
+<div class="text-center">
+
+    <h1 class="display-5"> Editar Atividade </h1>
+
+</div>
+
+<form asp-controller="Atividades" asp-action="Alterar" method="post">
+
+    <input type="hidden" asp-for="Id"/>
+    <div class="mb-3">
+        <label for="tipo"> Tipo de atividade </label>
+        <input type="text" asp-for="Tipo" class="form-control" placeholder="Atividade, Trabalho ou Prova?">
+        @Html.ValidationMessageFor(x => x.Tipo)
+    </div>
+    <div class="mb-3">
+        <label for="disciplina"> Disciplina </label>
+        <input type="text" asp-for="Disciplina" class="form-control" placeholder="Qual disciplina?">
+        @Html.ValidationMessageFor(x => x.Disciplina)
+    </div>
+    <div class="mb-3">
+        <label for="data"> Data Limite </label>
+        <input type="date" asp-for="Data" class="form-control" placeholder="Para qual dia?">
+        @Html.ValidationMessageFor(x => x.Data)
+    </div>
+
+    <button type="submit" class="btn btn-outline-success"> Alterar </button>
+    <a class="btn btn-outline-secondary" asp-controller="Atividades" asp-action="Index" role="button"> Voltar </a>
+</form>
+
+
+
+

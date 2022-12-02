@@ -1,0 +1,13 @@
+﻿@model AtividadesModel
+@{
+    ViewData["Title"] = "Confirmação de apagar atividade";
+}
+
+<div class="text-center">
+    <h3> Realmente deseja excluir (@Model.Tipo) de (@Model.Disciplina)?</h3>
+</div>
+
+<br/>
+<a class="btn btn-outline-primary d-md-block" role="button" asp-controller="Atividades" asp-action="Index"> Não/Cancelar </a>
+<br/>
+<a class="btn btn-outline-danger d-md-block" role="button" asp-controller="Atividades" asp-route-id="@Model.Id" asp-action="Apaga"> Sim/Confirmar </a>
