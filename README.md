@@ -17,4 +17,10 @@ Tela que adiciona novas atividades:
 Tela de edição de atividades já cadastradas:
 
 <img width="70%" src="https://user-images.githubusercontent.com/89041008/205203087-aecf8d55-c656-4ff9-95fd-84e9b3457f35.jpeg"/>
+  
+Tela de confirmação de excluir atividade:
+  
+<img width="70%" src="https://user-images.githubusercontent.com/89041008/205204776-d45a550a-e4be-4d3d-987e-d2a15964e52a.jpeg"/>
+  
 </div>
+
